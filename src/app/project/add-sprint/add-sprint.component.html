@@ -1,0 +1,22 @@
+<form [formGroup]="SprintFrom" (ngSubmit)="onSubmit()">
+    <div class="form-group mt-3">
+        <label for="">Sprint  Name</label>
+        <input type="text" formControlName="SprintName" class="form-control" placeholder="Entrez le Sprint Name">
+    </div>
+    <div class="form-group mt-3">
+        <label for="">Sprint Goal</label>
+        <input type="text" formControlName="SprintGoal" class="form-control" placeholder="Entrez Sprint  Goal">
+    </div>
+
+    <div class="form-group mt-3">
+        <label>DateDebut</label>
+        <input type="date" formControlName="DateDebut" class="form-control">
+    </div>
+    <div class="form-group mt-3">
+        <label>DateFin</label>
+        <input type="date" formControlName="DateFin" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Ajouter</button>
+</form>
+
